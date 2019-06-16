@@ -1,0 +1,8 @@
+version: '3'
+services:
+  nfs-client:
+    image: nfs-client
+    volumes:
+      - /nfs-client-volume:/app/data
+    deploy:
+      replicas: 3
